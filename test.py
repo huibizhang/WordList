@@ -51,7 +51,7 @@ for w in sorted(list(set(wordList))):
           .replace("`","\\`")
           .replace("|","\\|"))
   
-  if "." in word and word.index(".")==len(word)-1:
+  if "." in word and word[-1]==".":
     word = word[:-1]
       
   clearWordList.append(word)
